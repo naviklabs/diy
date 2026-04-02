@@ -1,0 +1,13 @@
+# Netlify config for CreateSkills.xyz
+# Base directory: createskills/ (Next.js app lives here)
+
+[build]
+  base    = "createskills"
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
